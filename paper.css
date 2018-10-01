@@ -1,0 +1,642 @@
+body {
+  margin: 3px;
+  padding: 3px;
+}
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 3px 3px;
+  background-color: #E0E4E5;
+  /*grid-template-areas: ". . . . . ." ". . . . . ." ". . . . . ." ". . . . . ." ". . . . . ." ". . . . . ." ". . . . . .";*/
+}
+
+.Header-bar { 
+  grid-area: 1 / 1 / 2 / 7;
+    border: 2px solid;
+    height: 300px;
+    /*font-size: 110px;*/
+    float: left;
+    /*margin: 0 auto;*/
+    padding-top: 100px;
+    width: 100%;
+    /*text-align: center;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+#ms {
+  font-size: 7.2vw;
+}
+
+#paper {
+  font-size: 5vw;
+}
+
+#header-text {
+  border: 8px solid red;
+  width: 60%;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  position: absolute;
+}
+
+#logo {
+  width: 20vw;
+  float: right;
+  margin: 0 auto;
+  right: 50px;
+  bottom: 20px;
+  /*border: 2px solid;*/
+  border-radius: 5px;
+  background-image: url("images/michael-scott.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 35vh;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #C1CACB;
+  color: black;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: inline;
+  height: 55px;
+}
+
+#navbar a {
+  float: left;
+  color: black;
+  display: inline;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 14.2%;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#navbar a:hover {
+  background-color: #E0E4E5;
+  color: black;
+  width: 15%;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  width: 15%;
+}
+
+.content {
+  padding: 16px;
+  width: 15%;
+  color: black;
+}
+
+.sticky {
+  position: fixed;
+  color: black;
+  top: 0;
+  width: 15%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+  color: black;
+}
+
+.About-company-picture { 
+grid-area: 3 / 4 / 5 / 7;
+border-left: 3px solid;
+border-top: 3px solid; 
+overflow: hidden;
+}
+
+#picture {
+  width: 75%;
+  height: 50%;
+  background-image: url("images/office-group.jpg");
+  background-repeat: no-repeat;
+  margin: 200px auto;
+
+}
+
+.about-company-description { 
+grid-area: 3 / 1 / 5 / 4; 
+border-right: 3px solid;
+border-top: 3px solid;
+font-size: 25px;
+font-family: 'Roboto Condensed', sans-serif;
+line-height: 45px;
+
+}
+
+.h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 55px;
+  margin-bottom: 105px;
+
+}
+
+.who-we-are-pictures {
+  display: grid;
+  grid-area: 5 / 1 / 9 / 7;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1px 1px;
+  grid-template-areas: ". . ." ". . ." ". . .";
+  /*border: 3px solid;*/
+}
+
+#team {
+  height: 500px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  margin: 20px 20px;
+  display: block;
+  border: 1px solid;
+  border-radius: 3px;
+  border-style: groove;
+  background-color: #C1CACB;
+  box-shadow: 2px 3px 3px 2px;
+}
+
+#michael-pic {
+  border: 2px solid;
+  background-image: url("images/michael-scott.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  margin: 20px auto;
+  padding-bottom: 25px;
+}
+
+#pam-pic {
+  border: 2px solid;
+  background-image: url("images/pam-beasley.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  margin: 20px auto;
+  padding-bottom: 25px;
+}
+
+#jim-pic {
+  border: 2px solid;
+  background-image: url("images/jim-halpert.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  margin: 20px auto;
+  padding-bottom: 25px;
+}
+
+#stanley-pic {
+  border: 2px solid;
+  background-image: url("images/stanley-hudson.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  margin: 20px auto;
+  padding-bottom: 25px;
+}
+
+#phyllis-pic {
+  border: 2px solid;
+  background-image: url("images/phyllis-vance.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  margin: 20px auto;
+  padding-bottom: 25px;
+}
+
+#creed-pic {
+  border: 2px solid;
+  background-image: url("images/creed-bratton.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  margin: 20px auto;
+  padding-bottom: 25px;
+}
+
+#ryan-pic {
+  border: 2px solid;
+  background-image: url("images/ryan-howard.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  margin: 20px auto;
+  padding-bottom: 25px;
+}
+
+#jan-pic {
+  border: 2px solid;
+  background-image: url("images/jan-levinson.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  margin: 20px auto;
+  padding-bottom: 25px;
+}
+
+#kevin-pic {
+  border: 2px solid;
+  background-image: url("images/kevin-malone.jpg");
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  margin: 20px auto;
+  padding-bottom: 25px;
+}
+
+#name {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+
+.Product-Header { 
+  grid-area: 9 / 1 / 9 / 7; 
+  height: 350px;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.products {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  border-bottom: 10px solid;
+  margin: 20px auto;
+}
+
+#products {
+  font-size: 80px;
+  grid-auto-flow: column;
+}
+
+.Product1 { 
+  grid-area: 10 / 1 / 11 / 3; 
+border-right: 2px solid;
+}
+
+#paper-image {
+  border: 2px double;
+  background-image: url("images/copy-paper.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 30vw;
+  margin: 20px auto;
+  padding-bottom: 25px;
+}
+
+#napkins {
+  border: 2px double;
+  background-image: url("images/napkins.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 30vw;
+  margin: 20px auto;
+  padding-bottom: 25px;
+}
+
+#notepad {
+  border: 2px double;
+  background-image: url("images/notebook.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 30vw;
+  margin: 20px auto;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+#notepads {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 25px;
+  padding-left: 40%;
+}
+
+#napkin {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 25px;
+  margin: 0 auto;
+  padding-left: 40%;
+
+}
+
+#copy-paper {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 25px;
+  padding-left: 40%;
+}
+
+.Product2 { 
+  grid-area: 10 / 3 / 11 / 5; 
+border-right: 2px solid;
+border-left: 2px solid;
+}
+
+.Product3 { 
+  grid-area: 10 / 5 / 11 / 7; 
+border-left: 2px solid;
+}
+
+.Product1-Description { 
+  grid-area: 11 / 1 / 12 / 3; 
+border-right: 2px solid;
+border-top: 2px solid;
+border-top-style: double;
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 20px;
+}
+
+.descriptions {
+  width: 80%;
+  height: 85%;
+  margin: 20px auto;
+}
+
+.Product2-Description { 
+  grid-area: 11 / 3 / 12 / 5; 
+border-right: 2px solid;
+border-left: 2px solid;
+border-top: 2px solid;
+border-top-style: double;
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 20px;
+}
+
+.Product3-Description { 
+  grid-area: 11 / 5 / 12 / 7; 
+border-left: 2px solid;
+border-top: 2px solid;
+border-top-style: double;
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 20px;
+}
+
+.Testimony1 { 
+grid-area: 12 / 1 / 13 / 4; 
+border-top: 2px solid;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+margin: 0 auto;
+padding-bottom: 40px;
+border-radius: 5px;
+padding-top: 20px;
+width: 85%;
+background-color: #C1CACB;
+}
+
+.Testimony2 { 
+  grid-area: 12 / 4 / 13 / 7; 
+border-top: 2px solid;
+ border-radius: 5px;
+width: 85%;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+padding-bottom: 40px;
+padding-top: 20px;
+background-color: #C1CACB;
+}
+
+
+.Location-Header { 
+  grid-area: 13 / 1 / 14 / 7; 
+border: 2px solid;
+height: 250px;
+font-size: 55px;
+ margin: 0 auto;
+ text-align: center;
+ padding-top: 30px;
+font-family: 'Roboto', sans-serif;
+}
+
+#location {
+  font-size: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 90%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: 2px solid;
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: #C1CACB;
+}
+
+.modal {
+  border: 2px solid;
+  position: absolute;
+  left: 350px;
+  top: 650px;
+}
+
+.input {
+  border: 2px solid;
+  margin: 250px auto;
+  width: 300px;
+  right: 200px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.submit {
+  border: 2px solid;
+  margin: 300px auto;
+  width: 100px;
+  right: 300px;
+  height: 20px;
+  font-size: 13px;
+}
+
+
+@media all and (-ms-high-contrast: none) {
+  .grid-container {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .Header bar {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+
+  .nav bar {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+
+  .About-company picture {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+  }
+
+  .about company description {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .who we are-pictures {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .who we are description of people {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+  }
+
+  .Location Header {
+    -ms-grid-row: 13;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+
+  .Product Header {
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+
+  .Product 1 {
+    -ms-grid-row: 10;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+
+  .Product 2 {
+    -ms-grid-row: 10;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+
+  .Product 3 {
+    -ms-grid-row: 10;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+  }
+
+  .Product 1 Description {
+    -ms-grid-row: 11;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+
+  .Product 2 Description {
+    -ms-grid-row: 11;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+
+  .Product 3 Description {
+    -ms-grid-row: 11;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+  }
+
+  .Testimony 1 {
+    -ms-grid-row: 12;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .Testimony 2 {
+    -ms-grid-row: 12;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+  }
+
+  .Address &amp; Contact {
+    -ms-grid-row: 14;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .Google Maps {
+    -ms-grid-row: 14;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+  }
+}
