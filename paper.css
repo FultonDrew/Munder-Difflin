@@ -17,12 +17,9 @@ body {
   grid-area: 1 / 1 / 2 / 7;
     border: 2px solid;
     height: 300px;
-    /*font-size: 110px;*/
     float: left;
-    /*margin: 0 auto;*/
     padding-top: 100px;
     width: 100%;
-    /*text-align: center;*/
     font-family: 'Roboto', sans-serif;
 }
 
@@ -135,7 +132,7 @@ overflow: hidden;
 grid-area: 3 / 1 / 5 / 4; 
 border-right: 3px solid;
 border-top: 3px solid;
-font-size: 25px;
+font-size: 1.2vw;
 font-family: 'Roboto Condensed', sans-serif;
 line-height: 45px;
 
@@ -144,7 +141,7 @@ line-height: 45px;
 .h1 {
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 55px;
+  font-size: 5vw;
   margin-bottom: 105px;
 
 }
@@ -160,7 +157,7 @@ line-height: 45px;
 }
 
 #team {
-  height: 500px;
+  height: 55vh;
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
   margin: 20px 20px;
@@ -170,6 +167,7 @@ line-height: 45px;
   border-style: groove;
   background-color: #C1CACB;
   box-shadow: 2px 3px 3px 2px;
+  font-size: 1vw;
 }
 
 #michael-pic {
@@ -292,7 +290,7 @@ line-height: 45px;
 #name {
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 1.2vw;
   text-align: center;
 }
 
@@ -303,7 +301,7 @@ line-height: 45px;
   grid-area: 9 / 1 / 9 / 7; 
   height: 350px;
   text-align: center;
-  font-size: 20px;
+  font-size: 2vh;
   width: 100%;
   margin: 0 auto;
 
@@ -311,13 +309,13 @@ line-height: 45px;
 
 .products {
   font-family: 'Roboto', sans-serif;
-  font-size: 30px;
+  font-size: 4vh;
   border-bottom: 10px solid;
   margin: 20px auto;
 }
 
 #products {
-  font-size: 80px;
+  font-size: 9vw;
   grid-auto-flow: column;
 }
 
@@ -457,7 +455,7 @@ background-color: #C1CACB;
 .Location-Header { 
   grid-area: 13 / 1 / 14 / 7; 
 border: 2px solid;
-height: 250px;
+height: 50vh;
 font-size: 55px;
  margin: 0 auto;
  text-align: center;
