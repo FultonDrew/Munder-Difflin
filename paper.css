@@ -41,6 +41,7 @@ body {
   position: absolute;
 }
 
+/*Michale Scott image static*/
 /*#logo {
   width: 20vw;
   float: right;
@@ -55,6 +56,8 @@ body {
   /*position: relative;*/
   /*height: 35vh;*/
 /*}*/
+
+/*Animation of Michale Scott into header*/
   #logo {
     width:50px;
     position:relative;
@@ -70,10 +73,11 @@ body {
     from{opacity:0;top:100%}
     to{opacity:1;top:0%;}
     
-}@-webkit-keyframes load_up{
+}
+
+@-webkit-keyframes load_up{
     from{opacity:0;top:100%}
-    to{opacity:1;top:0%;}
-    
+    to{opacity:1;top:0%;} 
 }
 
 
@@ -156,7 +160,6 @@ border-top: 3px solid;
 font-size: 1.5vw;
 font-family: 'Roboto Condensed', sans-serif;
 line-height: 45px;
-
 }
 
 .h1 {
@@ -164,7 +167,6 @@ line-height: 45px;
   font-family: 'Roboto', sans-serif;
   font-size: 5vw;
   margin-bottom: 105px;
-
 }
 
 .who-we-are-pictures {
@@ -403,18 +405,18 @@ border-right: 2px solid;
 }
 
 .Product2 { 
-  grid-area: 10 / 3 / 11 / 5; 
+grid-area: 10 / 3 / 11 / 5; 
 border-right: 2px solid;
 border-left: 2px solid;
 }
 
 .Product3 { 
-  grid-area: 10 / 5 / 11 / 7; 
+grid-area: 10 / 5 / 11 / 7; 
 border-left: 2px solid;
 }
 
 .Product1-Description { 
-  grid-area: 11 / 1 / 12 / 3; 
+grid-area: 11 / 1 / 12 / 3; 
 border-right: 2px solid;
 border-top: 2px solid;
 border-top-style: double;
@@ -429,7 +431,7 @@ font-size: 1.5vw;
 }
 
 .Product2-Description { 
-  grid-area: 11 / 3 / 12 / 5; 
+grid-area: 11 / 3 / 12 / 5; 
 border-right: 2px solid;
 border-left: 2px solid;
 border-top: 2px solid;
@@ -439,7 +441,7 @@ font-size: 1.5vw;
 }
 
 .Product3-Description { 
-  grid-area: 11 / 5 / 12 / 7; 
+grid-area: 11 / 5 / 12 / 7; 
 border-left: 2px solid;
 border-top: 2px solid;
 border-top-style: double;
@@ -461,9 +463,9 @@ background-color: #C1CACB;
 }
 
 .Testimony2 { 
-  grid-area: 12 / 4 / 13 / 7; 
+grid-area: 12 / 4 / 13 / 7; 
 border: 2px solid;
- border-radius: 5px;
+border-radius: 5px;
 width: 85%;
 font-family: 'Roboto', sans-serif;
 font-size: 1vw;
@@ -474,18 +476,18 @@ background-color: #C1CACB;
 
 
 .Location-Header { 
-  grid-area: 13 / 1 / 14 / 7; 
+grid-area: 13 / 1 / 14 / 7; 
 /*border: 2px solid;*/
 height: 60vh;
 font-size: 5vw;
- margin: 0 auto;
- text-align: center;
- padding-top: 30px;
+margin: 0 auto;
+text-align: center;
+padding-top: 30px;
 font-family: 'Roboto', sans-serif;
 }
 
 #map {
-   margin: 0 auto;
+margin: 0 auto;
 }
 
 #location {
